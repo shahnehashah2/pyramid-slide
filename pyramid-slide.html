@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+            font-weight: bold;
+            color: plum;
+            background-color: lightgray;
+            padding: 30px;
+            margin: none;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+        #banner {
+          background-color: plum;
+          color: white;
+          font-size: 50px;
+          font-weight: bold;
+          height: 100px;
+        }
+
+        .dropdown {
+          padding-right: 30px;
+          margin-right: 150px;
+        }
+
+        .slider {
+          padding-left: 30px;
+        }
+
+        .dropdownLabel, .sliderLabel {
+          font-weight: bold;
+        }
+
+        #height {
+          font-weight: bold;
+        }
+
+        #box {
+          border-radius: 20px;
+          border-color: plum;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+
+        #inputBox {
+          background-color: gray;
+        }
+
+    </style>
+</head>
+<body >
+    <div id="banner">
+      Pyramid Slide
+    </div>
+
+<div id="box">
+  <div id="inputBox">
+    <label class="dropdownLabel">Brick Symbol</label>
+    <select class="dropdown">
+      <option value="#">#</option>
+      <option value="$">$</option>
+      <option value="X">X</option>
+      <option value="@">@</option>
+    </select>
+
+    <label class="sliderLabel">How high?</label>
+    <input class="slider" type="range" name="height" min="1" max="20">
+    <span id="height"></span>
+
+  </div>
+  <br><br>
+
+  <div id="pyramid"></div>
+  <script src="pyramid-slide.js"></script>
+</div>
+
+
+</body>
+</html>
